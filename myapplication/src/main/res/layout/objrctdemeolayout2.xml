@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/h"
+        android:id="@+id/id_imageh"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/g"
+        android:id="@+id/id_iamgeg"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+
+   />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/f"
+        android:id="@+id/id_imagef"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+      />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/e"
+        android:id="@+id/id_imagee"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/d"
+        android:id="@+id/id_imaged"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/c"
+        android:id="@+id/id_iamgec"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+       />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/b"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/id_iamgeb"
+       />
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@mipmap/a"
+       android:paddingTop="5dp"
+       android:paddingLeft="5dp"
+       android:id="@+id/id_imagea"/>
+
+</FrameLayout>

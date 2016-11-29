@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lyw="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.lyw.myapplication.activity.MainActivity">
+
+   <com.example.lyw.myapplication.view.topBar
+       android:layout_width="match_parent"
+       android:layout_height="55dp"
+       lyw:leftColor="#000000"
+       lyw:leftText="左按钮"
+       lyw:rightText="右按钮"
+       lyw:leftBackground="@drawable/button"
+       lyw:rightBackground="@color/colorPrimary"
+       lyw:titleTextSize="10sp"
+       lyw:titleText="自定义view"
+       lyw:rightColor="#000000"
+       android:id="@+id/id_topbar"
+      >
+</com.example.lyw.myapplication.view.topBar>
+
+</RelativeLayout>
