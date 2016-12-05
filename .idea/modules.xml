@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AutoDesignView.iml" filepath="$PROJECT_DIR$/AutoDesignView.iml" />
       <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/treeview2/treeview2.iml" filepath="$PROJECT_DIR$/treeview2/treeview2.iml" />
     </modules>
   </component>
 </project>
