@@ -116,9 +116,8 @@ public class TreeHelper {
         * 过滤出可见的节点
         */
     public static <T> List<Node> filterVisibleNodes(List<Node> nodes){
-        List<Node> result = new ArrayList<>();
-        for (Node n :
-                nodes) {
+        List<Node> result = new ArrayList<Node>();
+        for (Node n : nodes) {
             if (n.isRoot() || n.isParentExpand()){
                 setNodeIcon(n);
                 result.add(n);

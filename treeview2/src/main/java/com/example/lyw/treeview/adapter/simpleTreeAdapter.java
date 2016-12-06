@@ -1,6 +1,7 @@
 package com.example.lyw.treeview.adapter;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -20,7 +21,7 @@ import java.util.List;
 
 public class SimpleTreeAdapter<T> extends TreeListAdapter<T>{
 
-
+    private static final String TAG = "SimpleTreeAdapter";
     public SimpleTreeAdapter(Context mContext, List<T> datas, ListView
             mTreeView, int defaultLevel) throws IllegalAccessException {
         super(mContext, datas, mTreeView, defaultLevel);
@@ -40,11 +41,13 @@ public class SimpleTreeAdapter<T> extends TreeListAdapter<T>{
         }
          if (node.getIcon() == -1){
              holder.mIcon.setVisibility(View.INVISIBLE);
+             Log.d(TAG, "getConvertView: node name is"+node.getName());
          }else {
              holder.mIcon.setVisibility(View.VISIBLE);
              holder.mIcon.setImageResource(node.getIcon());
-             holder.mText.setText(node.getName());
+             Log.d(TAG, "getConvertView: node name is"+node.getName());
          }
+        holder.mText.setText(node.getName());
         return convertView;
     }
 
@@ -60,8 +63,8 @@ public class SimpleTreeAdapter<T> extends TreeListAdapter<T>{
         int indexOf =mAllNodes.indexOf(node);
         Node extraNode = new Node(-1,node.getId(),s);
         extraNode.setParent(node);
-        node.getChilden().add(node);
-
+        node.getChilden().add(extraNode);
+        mAllNodes.add(indexOf + 1, extraNode);
         mVisibleNodes = TreeHelper.filterVisibleNodes(mAllNodes);
         notifyDataSetChanged();
 
